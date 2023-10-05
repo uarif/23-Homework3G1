@@ -36,5 +36,9 @@ class TestCalculatePeriodicTime(unittest.TestCase):
             result = calculate_periodic_time(length)
             assert math.isclose(result, expected_periodic_time, rel_tol=0.001)
 
+#The new line was added and run the code, the same error is no more but it says the code is false, which is not correct. 
+#if __name__ == '__main__':
+    #unittest.main(argv=['first-arg-is-ignored'], exit=False)
+
 if __name__ == '__main__':
     unittest.main()
