@@ -103,15 +103,13 @@ class TestCalculatePeriodicTime(unittest.TestCase):
 
     def test_calculate_periodic_time(self):
         # Test cases with known results 
-        **#BTW, these values are not correct, these are updated in the new file to merged as unit_test.** 
         test_cases = [
-            (0.5, 2.007),  # (length, expected_periodic_time)
-            (1.0, 4.498),
-            (1.5, 6.283),
-            (2.0, 8.987),
-            (2.5, 11.178)
+            (0.5, 1.57),  # (length, expected_periodic_time)
+            (1.0, 3.14),
+            (1.5, 4.44),
+            (2.0, 5.66),
+            (2.5, 6.84)
         ]
-
         # Perform the tests
         for length, expected_periodic_time in test_cases:
             result = calculate_periodic_time(length)
